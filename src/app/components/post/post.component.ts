@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Post} from "../../../interfaces/post";
+import {Post} from "../../interfaces/post";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({

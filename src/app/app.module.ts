@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { UsersComponent } from './components/users/users.component';
-import { UserComponent } from './components/user/user/user.component';
-import { PostComponent } from './components/post/post/post.component';
-import { PostsComponent } from './components/posts/posts/posts.component';
-import {RouterLink, RouterModule, Routes} from "@angular/router";
+import { UserComponent } from './components/user/user.component';
+import { PostComponent } from './components/post/post.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { RouterModule, Routes} from "@angular/router";
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
 
