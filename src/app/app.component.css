@@ -1,0 +1,14 @@
+div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: blue;
+  height: 70px;
+  padding: 0 400px;
+  box-sizing: border-box;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
