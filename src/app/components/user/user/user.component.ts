@@ -1,5 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {User} from "../../../interfaces/user.interface";
+import {ActivatedRoute, Router} from "@angular/router";
+import {DataTransfetService} from "../../../services/data-transfet.service";
+
 
 @Component({
   selector: 'app-user',
@@ -12,11 +15,18 @@ export class UserComponent implements OnInit {
   @Input()
   user: User;
 
+@Output()
+lift=new EventEmitter<User>();
+constructor(private data:DataTransfetService) {
+}
 
-  constructor() { }
+
 
   ngOnInit(): void {
 
   }
+ lifting():void{
+    this.lift.emit(this.user)
 
+}
 }

@@ -8,7 +8,7 @@ import {User} from "../interfaces/user.interface";
 })
 export class UserService {
   private url = 'https://jsonplaceholder.typicode.com/users';
-  private url1 = 'http://jsonplaceholder.typicode.com/posts';
+
 
   constructor(private httpClient: HttpClient) {
   }
@@ -16,7 +16,5 @@ export class UserService {
   getUsers(): Observable<User[]> {
     return this.httpClient.get<User[]>(this.url);
   }
-  getPosts(): Observable<any[]> {
-    return this.httpClient.get<any[]>(this.url1);
-  }
+
 }

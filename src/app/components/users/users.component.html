@@ -1,2 +1,5 @@
-<app-user *ngFor="let u of users" [user]="u" ></app-user>
+<hr>
+<app-user *ngFor="let u of users" [user]="u"  (lift)="catchUser($event)"></app-user>
+<hr>
 
+<div>{{user?.name}} <button (click)="Login()">login</button> </div>
