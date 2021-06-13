@@ -27,9 +27,15 @@ form:FormGroup;
   }
   addCar():void{
  
-    const { model,price,year } = this.form.value;
-    console.log(this.form.value);
-    this.carService.addCar(this.form.value)
+    const Car=this.form.value;
+  
+    console.log(Car);
+    this.carService.addCar(Car).
+    subscribe(
+      error => {
+        console.log(error);
+      }
+    )
     
   }
 }
