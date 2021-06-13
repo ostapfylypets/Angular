@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)=addCar()>
+ <div>
+     <p>model</p>
+     <input type="text" formControlName="model"></div>
+ <div> 
+  
+    <p>year</p>
+    <input type="text" formControlName="year"></div>
+ <div> 
+    
+    <p>price</p> 
+    <input type="text" formControlName="price"></div>
+  <button type="submit" >submit</button>
+</form>
