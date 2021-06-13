@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {getCarService} from "../service/get-car.service";
 import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
-import { Car } from '../modules/get-car';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
